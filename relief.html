@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relief — Tugu Muda Semarang</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="bg">
+  <svg class="tugu-silhouette" viewBox="0 0 200 520" xmlns="http://www.w3.org/2000/svg" fill="#C9A84C">
+    <ellipse cx="100" cy="22" rx="8" ry="14"/>
+    <path d="M92 30 Q88 20 84 14 Q89 22 94 28"/>
+    <path d="M108 30 Q112 20 116 14 Q111 22 106 28"/>
+    <path d="M88 36 Q86 52 86 68 Q86 74 100 76 Q114 74 114 68 Q114 52 112 36 Z"/>
+    <rect x="92" y="76" width="16" height="12" rx="1"/>
+    <path d="M72 88 L128 88 L132 102 L68 102 Z"/>
+    <path d="M64 102 L136 102 L142 118 L58 118 Z"/>
+    <rect x="82" y="118" width="36" height="160" rx="2"/>
+    <rect x="80" y="148" width="40" height="5" rx="1"/>
+    <rect x="80" y="168" width="40" height="5" rx="1"/>
+    <rect x="80" y="200" width="40" height="5" rx="1"/>
+    <rect x="80" y="232" width="40" height="5" rx="1"/>
+    <path d="M74 278 L126 278 L130 296 L70 296 Z"/>
+    <path d="M66 296 L134 296 L140 316 L60 316 Z"/>
+    <path d="M56 316 L144 316 L150 340 L50 340 Z"/>
+    <rect x="28" y="340" width="22" height="80" rx="1"/>
+    <rect x="29" y="355" width="20" height="3"/>
+    <rect x="29" y="365" width="20" height="3"/>
+    <rect x="29" y="375" width="20" height="3"/>
+    <rect x="56" y="340" width="22" height="80" rx="1"/>
+    <rect x="57" y="355" width="20" height="3"/>
+    <rect x="57" y="370" width="20" height="3"/>
+    <rect x="89" y="340" width="22" height="80" rx="1"/>
+    <rect x="90" y="352" width="20" height="3"/>
+    <rect x="90" y="365" width="20" height="3"/>
+    <rect x="90" y="378" width="20" height="3"/>
+    <rect x="122" y="340" width="22" height="80" rx="1"/>
+    <rect x="123" y="355" width="20" height="3"/>
+    <rect x="123" y="370" width="20" height="3"/>
+    <rect x="150" y="340" width="22" height="80" rx="1"/>
+    <rect x="151" y="355" width="20" height="3"/>
+    <rect x="151" y="365" width="20" height="3"/>
+    <rect x="151" y="375" width="20" height="3"/>
+    <rect x="18" y="420" width="164" height="20" rx="2"/>
+    <rect x="4" y="440" width="192" height="14" rx="3"/>
+    <polygon points="38,440 40,400 42,440"/>
+    <polygon points="65,440 67,408 69,440"/>
+    <polygon points="99,440 101,396 103,440"/>
+    <polygon points="131,440 133,408 135,440"/>
+    <polygon points="158,440 160,400 162,440"/>
+    <rect x="0" y="454" width="200" height="16" rx="0"/>
+    <ellipse cx="100" cy="464" rx="98" ry="6" opacity="0.5"/>
+  </svg>
+</div>
+<div class="batik"></div>
+<div id="page-transition"></div>
+
+<div id="app">
+<nav>
+  <div class="nav-brand">✦ ENSIKLOPEDIA PEPELEG 3 ✦</div>
+  <div class="nav-links">
+    <button class="nbtn" data-page="index.html" onclick="goPage('index.html')">SEJARAH</button>
+    <button class="nbtn on" data-page="relief.html" onclick="goPage('relief.html')">RELIEF</button>
+    <button class="nbtn" data-page="galeri.html" onclick="goPage('galeri.html')">GALERI</button>
+    <button class="nbtn" data-page="lokasi.html" onclick="goPage('lokasi.html')">LOKASI</button>
+    <button class="nbtn" data-page="profil.html" onclick="goPage('profil.html')">PROFIL</button>
+  </div>
+</nav>
+
+<div id="pages">
+<div class="page">
+
+  <div class="hero">
+    <div class="hero-h">Relief Tugu Muda</div>
+    <div class="hero-s">Lima Kisah · Lima Pilar · Satu Jiwa</div>
+    <div class="hline"></div>
+  </div>
+
+  <p class="prose" style="margin-bottom:22px">Kaki Tugu Muda dihiasi <strong>lima relief</strong> pada masing-masing sangga pilar. Setiap relief adalah ingatan kolektif yang diabadikan dalam batu. <em style="color:var(--gold);opacity:.7">Ketuk setiap panel untuk membaca kisahnya.</em></p>
+
+  <div class="rgrid" id="rgrid">
+
+    <div class="rcard" onclick="tglRelief(this)">
+      <div class="rimg">
+        <img src="image/hongerodeem.jpg" alt="Relief Hongerodeem" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <span style="display:flex;flex-direction:column;align-items:center;gap:4px">
+          <span style="font-size:18px;opacity:.5"></span>
+        </span>
+      </div>
+      <div class="rnum">I</div>
+      <div class="rname">Relief Hongerodeem</div>
+      <div class="rdesc">Menggambarkan kehidupan rakyat Indonesia di bawah cengkeraman penjajahan Belanda dan Jepang. Kemiskinan dan kelaparan merajalela — penyakit busung lapar (hongerodeem) menjangkiti ribuan jiwa. Relief ini adalah pengingat: dari luka dan derita itulah keberanian sejati dilahirkan.</div>
+    </div>
+
+    <div class="rcard" onclick="tglRelief(this)">
+      <div class="rimg">
+        <img src="" alt="Relief Pertempuran" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <span style="display:flex;flex-direction:column;align-items:center;gap:4px">
+          <span style="font-size:18px;opacity:.5"></span>
+        </span>
+      </div>
+      <div class="rnum">II</div>
+      <div class="rname">Relief Pertempuran</div>
+      <div class="rdesc">Mengabadikan gelora semangat dan keberanian luar biasa para pemuda Semarang dalam mempertahankan kemerdekaan. Dengan senjata seadanya, jiwa-jiwa muda yang membara berhadapan langsung dengan tentara Jepang bersenjata lengkap.</div>
+    </div>
+
+    <div class="rcard" onclick="tglRelief(this)">
+      <div class="rimg">
+        <img src="image/penyerangan.jpeg" alt="Relief Penyerangan" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <span style="display:flex;flex-direction:column;align-items:center;gap:4px">
+          <span style="font-size:18px;opacity:.5"></span>
+        </span>
+      </div>
+      <div class="rnum">III</div>
+      <div class="rname">Relief Penyerangan</div>
+      <div class="rdesc">Melambangkan perlawanan masif seluruh rakyat Indonesia yang bangkit serentak. Bukan hanya pemuda — semua lapisan masyarakat bersatu padu menyerang balik penjajah, merobek belenggu yang telah lama memperbudak martabat bangsa.</div>
+    </div>
+
+    <div class="rcard" onclick="tglRelief(this)">
+      <div class="rimg">
+        <img src="image/korban.jpg" alt="Relief Korban" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <span style="display:flex;flex-direction:column;align-items:center;gap:4px">
+          <span style="font-size:18px;opacity:.5"></span>
+        </span>
+      </div>
+      <div class="rnum">IV</div>
+      <div class="rname">Relief Korban</div>
+      <div class="rdesc">Menggambarkan pengorbanan yang tidak ternilai — rakyat yang jatuh, keluarga yang berduka, jalanan Semarang yang basah oleh darah pahlawan. Pertempuran Lima Hari menorehkan luka yang dalam, namun juga mengukir nama-nama mulia dalam catatan sejarah abadi.</div>
+    </div>
+
+    <div class="rcard full" onclick="tglRelief(this)">
+      <div class="rimg" style="aspect-ratio:32/9">
+        <img src="" alt="Relief Kemenangan" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <span style="display:flex;flex-direction:column;align-items:center;gap:4px">
+          <span style="font-size:18px;opacity:.5"></span>
+        </span>
+      </div>
+      <div class="rnum">V</div>
+      <div class="rname">Relief Kemenangan</div>
+      <div class="rdesc">Mahkota dari keempat relief sebelumnya — kemenangan yang diraih bukan dengan mudah, tetapi dengan air mata, darah, dan nyawa. Relief ini menggambarkan sukacita yang tertahan: kebebasan yang akhirnya diperoleh setelah pengorbanan tiada tara di bumi Kota Semarang.</div>
+    </div>
+
+  </div>
+
+  <div class="orn">✦ ◆ ✦</div>
+
+  <div class="stitle">Ornamen Taman</div>
+  <p class="prose">Mengelilingi tugu, <strong>taman hias</strong> dirancang memperkuat kesan monumental sekaligus memberi ruang refleksi bagi warga. Lampu-lampu putih dan kuning menciptakan siluet yang anggun dan khidmat di malam hari.</p>
+
+</div>
+</div>
+<footer>✦ TUGU MUDA SEMARANG · PERTEMPURAN LIMA HARI 1945 · SEMANGAT ABADI ✦</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

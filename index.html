@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sejarah — Tugu Muda Semarang</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TUGU MUDA SILHOUETTE BACKGROUND -->
+<div id="bg">
+  <svg class="tugu-silhouette" viewBox="0 0 200 520" xmlns="http://www.w3.org/2000/svg" fill="#C9A84C">
+    <!-- API / Puncak -->
+    <ellipse cx="100" cy="22" rx="8" ry="14"/>
+    <path d="M92 30 Q88 20 84 14 Q89 22 94 28"/>
+    <path d="M108 30 Q112 20 116 14 Q111 22 106 28"/>
+    <!-- Kepala tugu -->
+    <path d="M88 36 Q86 52 86 68 Q86 74 100 76 Q114 74 114 68 Q114 52 112 36 Z"/>
+    <!-- Leher -->
+    <rect x="92" y="76" width="16" height="12" rx="1"/>
+    <!-- Bahu 1 (lebar) -->
+    <path d="M72 88 L128 88 L132 102 L68 102 Z"/>
+    <!-- Bahu 2 (lebih lebar) -->
+    <path d="M64 102 L136 102 L142 118 L58 118 Z"/>
+    <!-- Badan utama -->
+    <rect x="82" y="118" width="36" height="160" rx="2"/>
+    <!-- Ornamen horizontal badan -->
+    <rect x="80" y="148" width="40" height="5" rx="1"/>
+    <rect x="80" y="168" width="40" height="5" rx="1"/>
+    <rect x="80" y="200" width="40" height="5" rx="1"/>
+    <rect x="80" y="232" width="40" height="5" rx="1"/>
+    <!-- Kaki / Pedestal 1 -->
+    <path d="M74 278 L126 278 L130 296 L70 296 Z"/>
+    <!-- Kaki / Pedestal 2 -->
+    <path d="M66 296 L134 296 L140 316 L60 316 Z"/>
+    <!-- Kaki / Pedestal 3 -->
+    <path d="M56 316 L144 316 L150 340 L50 340 Z"/>
+    <!-- Relief pilar 1 (kiri jauh) -->
+    <rect x="28" y="340" width="22" height="80" rx="1"/>
+    <rect x="29" y="355" width="20" height="3"/>
+    <rect x="29" y="365" width="20" height="3"/>
+    <rect x="29" y="375" width="20" height="3"/>
+    <!-- Relief pilar 2 (kiri dekat) -->
+    <rect x="56" y="340" width="22" height="80" rx="1"/>
+    <rect x="57" y="355" width="20" height="3"/>
+    <rect x="57" y="370" width="20" height="3"/>
+    <!-- Pilar tengah -->
+    <rect x="89" y="340" width="22" height="80" rx="1"/>
+    <rect x="90" y="352" width="20" height="3"/>
+    <rect x="90" y="365" width="20" height="3"/>
+    <rect x="90" y="378" width="20" height="3"/>
+    <!-- Relief pilar 4 (kanan dekat) -->
+    <rect x="122" y="340" width="22" height="80" rx="1"/>
+    <rect x="123" y="355" width="20" height="3"/>
+    <rect x="123" y="370" width="20" height="3"/>
+    <!-- Relief pilar 5 (kanan jauh) -->
+    <rect x="150" y="340" width="22" height="80" rx="1"/>
+    <rect x="151" y="355" width="20" height="3"/>
+    <rect x="151" y="365" width="20" height="3"/>
+    <rect x="151" y="375" width="20" height="3"/>
+    <!-- Landasan utama -->
+    <rect x="18" y="420" width="164" height="20" rx="2"/>
+    <!-- Kolam -->
+    <rect x="4" y="440" width="192" height="14" rx="3"/>
+    <!-- Bambu runcing kecil (5 buah) -->
+    <polygon points="38,440 40,400 42,440"/>
+    <polygon points="65,440 67,408 69,440"/>
+    <polygon points="99,440 101,396 103,440"/>
+    <polygon points="131,440 133,408 135,440"/>
+    <polygon points="158,440 160,400 162,440"/>
+    <!-- Dasar / Tanah -->
+    <rect x="0" y="454" width="200" height="16" rx="0"/>
+    <!-- Taman melingkar kecil -->
+    <ellipse cx="100" cy="464" rx="98" ry="6" opacity="0.5"/>
+  </svg>
+</div>
+<div class="batik"></div>
+<div id="page-transition"></div>
+
+<div id="app">
+<nav>
+  <div class="nav-brand">✦ ENSIKLOPEDIA PEPELEG 3 ✦</div>
+  <div class="nav-links">
+    <button class="nbtn on" data-page="index.html" onclick="goPage('index.html')">SEJARAH</button>
+    <button class="nbtn" data-page="relief.html" onclick="goPage('relief.html')">RELIEF</button>
+    <button class="nbtn" data-page="galeri.html" onclick="goPage('galeri.html')">GALERI</button>
+    <button class="nbtn" data-page="lokasi.html" onclick="goPage('lokasi.html')">LOKASI</button>
+    <button class="nbtn" data-page="profil.html" onclick="goPage('profil.html')">PROFIL</button>
+  </div>
+</nav>
+
+<div id="pages">
+<div class="page">
+
+  <div class="hero">
+    <div class="hero-jv">ꦠꦸꦒꦸꦩꦸꦢ</div>
+    <div class="hero-h">Sejarah Tugu Muda</div>
+    <div class="hero-s">Monumen Pertempuran Lima Hari · Semarang</div>
+    <div class="hline"></div>
+  </div>
+
+  <div class="facts">
+    <div class="fcard"><span class="fnum">1945</span><span class="flbl">Tahun Peristiwa</span></div>
+    <div class="fcard"><span class="fnum">5</span><span class="flbl">Hari Pertempuran</span></div>
+    <div class="fcard"><span class="fnum">1953</span><span class="flbl">Tugu Diresmikan</span></div>
+  </div>
+
+  <div class="stitle">Latar Belakang</div>
+  <p class="prose">Tugu Muda adalah sebuah monumen yang berdiri kokoh di jantung Kota Semarang — bukan sekadar batu dan semen, tetapi <strong>nafas perjuangan</strong> yang membeku menjadi bentuk. Dibangun untuk mengenang para pemuda yang gugur dalam <strong>Pertempuran Lima Hari di Semarang</strong> (14–19 Oktober 1945), monumen ini menjadi saksi bisu semangat yang tak pernah padam.</p>
+  <p class="prose">Bentuknya menyerupai <strong>lilin yang menyala</strong> — simbol mendalam bahwa semangat juang para pahlawan tidak akan pernah redup. Tugu berpenampang <strong>segi lima</strong>, melambangkan Pancasila sebagai falsafah bangsa.</p>
+
+  <div class="orn">✦ ◆ ✦ ◆ ✦</div>
+
+  <div class="stitle">Kronologi Pembangunan</div>
+  <div class="tl">
+    <div class="tli">
+      <div class="tldot"></div>
+      <div class="tly">14–19 Oktober 1945</div>
+      <div class="tlt">Pertempuran Lima Hari di Semarang — ribuan pemuda bertempur melawan pasukan Jepang bersenjata lengkap hanya dengan bambu runcing dan semangat kemerdekaan yang membara.</div>
+    </div>
+    <div class="tli">
+      <div class="tldot"></div>
+      <div class="tly">28 Oktober 1945</div>
+      <div class="tlt">Peletakan batu pertama oleh <strong style="color:var(--gold)">Mr. Wongsonegoro</strong>, Gubernur Jawa Tengah — bertepatan dengan Hari Sumpah Pemuda yang penuh makna.</div>
+    </div>
+    <div class="tli">
+      <div class="tldot"></div>
+      <div class="tly">November 1945</div>
+      <div class="tlt">Proyek terhenti. Perang kembali pecah melawan Sekutu dan sisa pasukan Jepang. Impian membangun tugu terpaksa ditunda tanpa batas.</div>
+    </div>
+    <div class="tli">
+      <div class="tldot"></div>
+      <div class="tly">1949</div>
+      <div class="tlt">Badan Koordinasi Pemuda Indonesia (BKPI) kembali menggagas pembangunan tugu. Namun keterbatasan dana membuat ide ini masih belum bisa terwujud.</div>
+    </div>
+    <div class="tli">
+      <div class="tldot"></div>
+      <div class="tly">1951</div>
+      <div class="tlt">Wali Kota <strong style="color:var(--gold)">Hadi Soebeno Sosro Wedoyo</strong> membentuk Panitia Tugu Muda. Lokasi dipindahkan ke bundaran depan Lawang Sewu — titik pertemuan Jl. Pemuda, Jl. Imam Bonjol, Jl. Dr. Sutomo, dan Jl. Pandanaran.</div>
+    </div>
+    <div class="tli">
+      <div class="tldot"></div>
+      <div class="tly">10 November 1951</div>
+      <div class="tlt">Gubernur Jawa Tengah <strong style="color:var(--gold)">Boediono</strong> meletakkan batu pertama di lokasi baru. Pembangunan resmi dimulai.</div>
+    </div>
+    <div class="tli">
+      <div class="tldot lit"></div>
+      <div class="tly">20 Mei 1953</div>
+      <div class="tlt">Tugu Muda resmi diresmikan oleh Presiden <strong style="color:var(--gold)">Ir. Soekarno</strong>. Tugu berpenampang segi lima dengan tiga bagian — landasan, badan, dan kepala — akhirnya berdiri megah menjadi kebanggaan Kota Semarang.</div>
+    </div>
+  </div>
+
+  <div class="orn">◆ ✦ ◆</div>
+
+  <div class="stitle">Arsitektur & Makna</div>
+  <p class="prose">Tugu ini terdiri dari tiga bagian utama: <strong>landasan</strong> dengan lima sangga pilar berukir relief, <strong>badan</strong> tugu yang menjulang, dan <strong>kepala</strong> berbentuk nyala api. Di sekelilingnya terdapat kolam hias, taman kota, air mancur, dan <strong>5 replika bambu runcing</strong> — simbol lima hari perlawanan heroik.</p>
+
+</div>
+</div>
+<footer>✦ TUGU MUDA SEMARANG · PERTEMPURAN LIMA HARI 1945 · SEMANGAT ABADI ✦</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
